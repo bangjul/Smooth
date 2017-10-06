@@ -1,0 +1,9 @@
+C:\Users\Julio Alfian\Documents\coba\mockupDeteksiKecepatan\mockupDeteksiKecepatan\bin\Debug\mockupDeteksiKecepatan.exe.config
+C:\Users\Julio Alfian\Documents\coba\mockupDeteksiKecepatan\mockupDeteksiKecepatan\obj\Debug\mockupDeteksiKecepatan.csprojResolveAssemblyReference.cache
+C:\Users\Julio Alfian\Documents\coba\mockupDeteksiKecepatan\mockupDeteksiKecepatan\obj\Debug\mockupDeteksiKecepatan.Form1.resources
+C:\Users\Julio Alfian\Documents\coba\mockupDeteksiKecepatan\mockupDeteksiKecepatan\obj\Debug\mockupDeteksiKecepatan.Properties.Resources.resources
+C:\Users\Julio Alfian\Documents\coba\mockupDeteksiKecepatan\mockupDeteksiKecepatan\obj\Debug\mockupDeteksiKecepatan.csproj.GenerateResource.Cache
+C:\Users\Julio Alfian\Documents\coba\mockupDeteksiKecepatan\mockupDeteksiKecepatan\bin\Debug\mockupDeteksiKecepatan.exe
+C:\Users\Julio Alfian\Documents\coba\mockupDeteksiKecepatan\mockupDeteksiKecepatan\bin\Debug\mockupDeteksiKecepatan.pdb
+C:\Users\Julio Alfian\Documents\coba\mockupDeteksiKecepatan\mockupDeteksiKecepatan\obj\Debug\mockupDeteksiKecepatan.exe
+C:\Users\Julio Alfian\Documents\coba\mockupDeteksiKecepatan\mockupDeteksiKecepatan\obj\Debug\mockupDeteksiKecepatan.pdb
