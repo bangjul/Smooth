@@ -15,9 +15,42 @@ namespace mockupDeteksiKecepatan
     {
         Bitmap objBitmap;
         int blurAmount;
+        float[] gn = new float[384];
+        float[,] h = new float[4, 384];
+        float[,] hs = new float[4, 384];
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void histogram(Bitmap bitmap, int indeks, System.Windows.Forms.DataVisualization.Charting.Chart chart)
+        {
+            for (int i = 0; i < 384; i++)
+                h[indeks, i] = 0;
+
+            for (int i = 0; i < bitmap.Width; i++)
+            {
+                for (int j = 0; j < bitmap.Height; j++)
+                {
+                    Color color = bitmap.GetPixel(i, j);
+                    int red = color.R;
+                    int green = color.G;
+                    int blue = color.B;
+                    red /= 2; green /= 2; blue /= 2;
+                    h[indeks, red]++;
+                    h[indeks, 128 + green]++;
+                    h[indeks, 256 + blue]++;
+                }
+            }
+            float hmax = h[indeks, 0];
+            for (int i = 1; i < 384; i++)
+                if (h[indeks, i] > hmax) hmax = h[indeks, i];
+
+            for (int i = 0; i < 384; i++)
+                h[indeks, i] = 110 * h[indeks, i] / hmax;
+
+            for (int i = 0; i < 384; i++)
+                chart.Series["Series1"].Points.AddXY(i, h[indeks, i]);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -84,6 +117,9 @@ namespace mockupDeteksiKecepatan
                 objBitmap = new Bitmap(openFileDialog1.FileName);
                 pictureBox1.Image = objBitmap;
             }
+
+            histogram(objBitmap, 0, chart1);
+
         }       
         
         private void process_Click(object sender, EventArgs e)
